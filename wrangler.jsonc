@@ -1,0 +1,30 @@
+{
+	"name": "books-site",
+	"compatibility_date": "2026-11-07",
+	"account_id": "a4cf5f6ece152df9504fca8d6552959e",
+	"main": "src/index.js",
+	"assets": {
+	  "directory": "./public/",
+	  "binding": "ASSETS",
+	  "run_worker_first": ["/api/*", "/admin"]
+	},
+	"d1_databases": [
+	  {
+		"binding": "DB",
+		"database_name": "books-db",
+		"database_id": "5c79a298-c545-4c95-b57c-8caff8136905"
+	  }
+	],
+	"r2_buckets": [
+	  {
+		"binding": "COVERS",
+		"bucket_name": "books-covers"
+	  }
+	],
+	"routes": [
+	  {
+		"pattern": "books.smartdadehkavan.ir",
+		"custom_domain": true
+	  }
+	]
+  }
